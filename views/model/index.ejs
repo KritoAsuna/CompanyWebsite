@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%=typeof title == 'Homepage' ? 'Better World Technology' : title%>
+  </title>
+  <meta charset="UTF-8" />
+</head>
+
+<!--index.ejs-->
+
+
+<div class="row">
+
+  <!--HK Island ================= -->
+  <div class="col-12 col-sm-6 col-lg-4 col-md-4 col-xl-4" id="div01">
+    <% model.forEach( function(model) { %>
+      <div class="card" id="div02">
+        <div class="card-body">
+          <img src="<%= model.image %>" class="img-fluid thumbnail" alt="Responsive image" />
+          <h5 class="card-title">
+            <a "http://localhost:1337/model/detial/<%= model.id %>">
+              <%= model.name %>
+            </a>
+          </h5>
+          <p class="card-subtitle mb-2 text mutedt">
+            <%= model.location %>
+          </p>
+
+        </div>
+      </div>
+      <% }); %>
+
+        <br>
+  </div>
+</div>
+
+<html>
