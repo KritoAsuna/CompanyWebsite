@@ -1,2 +1,3 @@
-# CompanyWebsite
-Better world Trechnology limited
+# web
+
+a [Sails](http://sailsjs.org) application
